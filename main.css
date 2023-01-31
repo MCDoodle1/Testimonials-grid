@@ -1,0 +1,174 @@
+/* Font families. */
+/* Font sizes. */
+/* 8 px */
+/* 10 px */
+/* 12 px */
+/* 14 px */
+/* 16 px */
+/* 18 px */
+/* 20 px */
+/* 24 px */
+/* 32 px */
+/* 48 px */
+/* 64 px */
+/* 80 px */
+/* 96 px */
+/* 112 px */
+/* 128 px */
+/* 144 px */
+/* 160 px */
+/* Font weights */
+/* Line heights. */
+/* Letter spacings. */
+/* Border radius */
+/* Borders */
+/* Width */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: hsl(0deg, 0%, 81%);
+}
+
+/* Font families. */
+/* Font sizes. */
+/* 8 px */
+/* 10 px */
+/* 12 px */
+/* 14 px */
+/* 16 px */
+/* 18 px */
+/* 20 px */
+/* 24 px */
+/* 32 px */
+/* 48 px */
+/* 64 px */
+/* 80 px */
+/* 96 px */
+/* 112 px */
+/* 128 px */
+/* 144 px */
+/* 160 px */
+/* Font weights */
+/* Line heights. */
+/* Letter spacings. */
+/* Border radius */
+/* Borders */
+/* Width */
+.grid-container {
+  font-size: 77%;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.testimonial {
+  display: grid;
+  grid-auto-flow: row;
+  margin: auto;
+  width: 65%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.testimonial__attestant {
+  display: flex;
+  justify-content: flex-start;
+}
+.testimonial__person {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+}
+.testimonial__grade {
+  opacity: 50%;
+}
+.testimonial__title {
+  font-weight: 500;
+}
+.testimonial__text {
+  margin-top: 1rem;
+  opacity: 50%;
+  line-height: 1.5;
+}
+.testimonial__picture {
+  height: 2rem;
+  border-radius: 50%;
+}
+.testimonial__picture-one {
+  border: 2px solid #a07dd9;
+}
+.testimonial__picture-two {
+  border: 2px solid hsl(217deg, 19%, 35%);
+}
+.testimonial__picture-three {
+  border: 2px solid hsl(210deg, 46%, 95%);
+}
+.testimonial__picture-four {
+  border: 2px solid hsl(263deg, 55%, 52%);
+}
+.testimonial__picture-five {
+  border: 2px solid hsl(210deg, 46%, 95%);
+}
+.testimonial__box1 {
+  background: url("./images/bg-pattern-quotation.svg") right 1rem top no-repeat, hsl(263deg, 55%, 52%);
+  background-size: 35%;
+  color: hsl(210deg, 46%, 95%);
+}
+.testimonial__box2 {
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(210deg, 46%, 95%);
+}
+.testimonial__box3 {
+  background-color: hsl(210deg, 46%, 95%);
+}
+.testimonial__box4 {
+  background-color: hsl(219deg, 29%, 14%);
+  color: hsl(210deg, 46%, 95%);
+}
+.testimonial__box5 {
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 40rem) {
+  .grid-container {
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-inline: auto;
+    width: min(95%, 79.8rem);
+  }
+  .testimonial {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  .testimonial__box1 {
+    grid-column: span 2;
+  }
+  .testimonial__box4 {
+    grid-column: span 2;
+  }
+  .testimonial__box5 {
+    grid-column: 4;
+    grid-row: 1/span 2;
+  }
+}/*# sourceMappingURL=main.css.map */

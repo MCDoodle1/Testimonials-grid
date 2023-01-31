@@ -1,0 +1,19 @@
+@import
+'fonts',
+'format',
+'colors';
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-size: 13px;
+    font-family: $ff-primary;
+    background: $clr-neutral-background;
+}

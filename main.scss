@@ -1,0 +1,137 @@
+@import 
+'resets', 
+'colors', 
+'fonts',
+'format';
+
+.grid-container {
+    font-size: 77%;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.testimonial {
+    display: grid;
+    grid-auto-flow: row;
+    margin: auto;
+    width: 65%;
+    padding: 2rem;
+    border-radius: $border-radius-m;
+
+    &__attestant {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &__person {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem 1rem;
+    }
+
+    &__grade {
+        opacity: 50%;
+    }
+
+    &__title{
+        font-weight: $fw-m;
+    }
+
+    &__text {
+        margin-top: 1rem;
+        opacity: 50%;
+        line-height: $lh-m;
+    }
+
+    &__picture {
+        height: 2rem;
+        border-radius: $border-radius-circle;
+    }
+
+    &__picture-one {
+            border: 2px solid lighten($clr-primary-brand ,15);
+        }
+    &__picture-two {
+            border: 2px solid $clr-neutral-medium;
+        }
+    &__picture-three {
+            border: 2px solid $clr-neutral-light;
+        }
+    &__picture-four {
+            border: 2px solid $clr-primary-brand;
+        }
+    &__picture-five {
+            border: 2px solid $clr-neutral-light;
+        }
+
+
+    &__box1 {
+        background: 
+        url("./images/bg-pattern-quotation.svg") right 1rem top no-repeat, 
+        $clr-primary-brand;
+        background-size: 35%;
+        color: $clr-neutral-light;
+    }
+               
+    &__box2 {
+        background-color: $clr-neutral-medium;
+        color: $clr-neutral-light;
+    }
+        
+    &__box3 {
+        background-color: $clr-neutral-light;
+    }
+        
+    &__box4 {
+        background-color: $clr-neutral-dark;
+        color: $clr-neutral-light;
+    }
+        
+    &__box5 {
+        background-color: $clr-neutral-light;
+    }
+    
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 40rem) {
+    .grid-container {
+        font-size: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-inline: auto;
+        width: min(95%, 79.8rem);
+    }
+
+    .testimonial {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .testimonial__box1 {
+        grid-column: span 2;
+    }
+        
+    .testimonial__box4 {
+        grid-column: span 2;
+    }
+        
+    .testimonial__box5 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+    
+}
